@@ -1,3 +1,4 @@
+// image sourse 
 const images = [
     'images/pic-1.jpg',  //0 
     'images/pic-2.jpg',  //1
@@ -9,6 +10,7 @@ const images = [
     'images/pic-8.jpg',  //7
     'images/pic-9.jpg',  //8
 ]
+// img function
 let imgIndex = 0;
 const imgEl = document.getElementById('slider-img');
 setInterval(() => {
@@ -19,4 +21,4 @@ setInterval(() => {
     console.log(imgIndex, imgUrl);
     imgEl.setAttribute('src', imgUrl);
     imgIndex++;
-}, 1000)
+}, 1000);
